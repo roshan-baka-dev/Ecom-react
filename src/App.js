@@ -9,6 +9,9 @@ import Hero from './Component/Home/Hero';
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import Feature from './Component/Home/Feature';
+import Product from './Component/Home/Product';
+import Banner from './Component/Shop/Banner';
+import Pagination from './Component/Shop/Pagination';
 
 function App() {
   return (
@@ -16,10 +19,17 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path='/'>
-            <Hero />
-            <Feature />
-          </Route>
+          <Route path='/' element={<>
+            <Hero/>
+            <Feature/>
+            <Product/>
+          </>}/>
+
+          <Route path='/shop' element={<>
+            <Banner/>
+            <Product/>
+            <Pagination/>
+          </>}/>
         </Routes>
 
         <Newsletter />
