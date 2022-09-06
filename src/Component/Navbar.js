@@ -10,12 +10,12 @@ function Navbar(){
         <div>
             <ul id="navbar">
                 <li><i id="close-btn" class="fa-solid fa-close"></i></li>
-                <li><Link class="active" to="/">Home</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="shop">Shop</Link></li>
-                <li><Link to="Blog.html">Blog</Link></li>
-                <li><Link to="about.html">About</Link></li>
-                <li><Link to="contact.html">Contact</Link></li>
-                <li><Link to="cart.html"><i class="fa-solid fa-bag-shopping"></i></Link></li>
+                <li><Link to="Blog">Blog</Link></li>
+                <li><Link to="about">About</Link></li>
+                <li><Link to="contact">Contact</Link></li>
+                <li><Link to="cart"><i class="fa-solid fa-bag-shopping"></i></Link></li>
             </ul>
         </div>
 

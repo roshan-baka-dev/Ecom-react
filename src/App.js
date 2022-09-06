@@ -7,11 +7,13 @@ import Footer from './Component/Footer';
 import Hero from './Component/Home/Hero';
 
 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Feature from './Component/Home/Feature';
 import Product from './Component/Home/Product';
 import Banner from './Component/Shop/Banner';
 import Pagination from './Component/Shop/Pagination';
+import ProductDetails from './Component/ProductDetails';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
+
           <Route path='/' element={<>
             <Hero/>
             <Feature/>
@@ -30,6 +33,10 @@ function App() {
             <Product/>
             <Pagination/>
           </>}/>
+          <Route path='/singlepro' element={<>
+            <ProductDetails/>            
+          </>}/>
+
         </Routes>
 
         <Newsletter />

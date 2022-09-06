@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
-function Navbar(){
+function ProductDetails(){
     return(
         <section id="pro-detail" className="section-p1">
 
@@ -47,4 +45,4 @@ function Navbar(){
     )
 }
 
-export default Navbar
+export default ProductDetails

@@ -7,7 +7,7 @@ const assetObj=[
     },
     {
         image:'img/products/f3.jpg'
-    },
+    },  
     {
         image:'img/products/f4.jpg'
     },
