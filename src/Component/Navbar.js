@@ -2,6 +2,15 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
+const navbar=document.querySelector("#navbar");
+function navbarpop(){
+    navbar.style.right="0px";
+}
+
+function navbarclose(){
+        navbar.style.right="-300px";
+}
+
 function Navbar(){
     return(
         <section id="header">
@@ -9,7 +18,7 @@ function Navbar(){
 
         <div>
             <ul id="navbar">
-                <li><i id="close-btn" class="fa-solid fa-close"></i></li>
+                <li><i id="close-btn" class="fa-solid fa-close" onClick={navbarclose}></i></li>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="shop">Shop</Link></li>
                 <li><Link to="Blog">Blog</Link></li>
@@ -21,7 +30,7 @@ function Navbar(){
 
         <div id="mobile">
             <i class="fa-solid fa-bag-shopping"></i>
-            <i id="bar" class="fa-solid fa-outdent"></i>
+            <i id="bar" class="fa-solid fa-outdent" onClick={navbarpop}></i>
         </div>
     </section>
     )
