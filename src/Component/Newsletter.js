@@ -7,8 +7,8 @@ export default function Newsletter(){
   
     const sendEmail = (e) => {
       e.preventDefault();
-  
-      emailjs.sendForm('service_y6vqekk', 'template_h5r639q', e.target, 'hMj2OIfemOmHGSpGW')
+        console.log(e.target)
+      emailjs.sendForm('service_y6vqekk', 'template_h5r639q', e.target, 'KMNAUPQmHZKL4ExpK')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
