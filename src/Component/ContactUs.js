@@ -27,7 +27,7 @@ const ContactUS = () => {
     <div className="container mt-5">
       <h2 className="mb-3">Contact Form </h2>
       <form onSubmit={onSubmit}>
-        <div className="mb-3">
+        <div className="col-xs-2">
           <label className="form-label" htmlFor="name">
             Name
           </label>
@@ -45,7 +45,7 @@ const ContactUS = () => {
           </label>
           <textarea className="form-control" id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit">
+        <button className="btn btn-primary" type="submit">
           {formStatus}
         </button>
       </form>
